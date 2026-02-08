@@ -55,7 +55,7 @@ function Layout() {
                     {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
                 <div className="mobile-logo">
-                    <Shield size={24} className="logo-icon" />
+                    <img src="/logo-karantina.svg" alt="Logo Karantina" className="mobile-logo-icon" />
                     <span className="logo-text">Sitrak</span>
                 </div>
                 <div className="header-spacer"></div>
@@ -74,12 +74,11 @@ function Layout() {
                 <div className="sidebar-header">
                     <div className="sidebar-logo">
                         <div className="logo-container">
-                            <Shield size={26} className="logo-icon" />
+                            <img src="/logo-karantina.svg" alt="Logo Karantina" className="logo-image" />
                         </div>
                         <div className="logo-content">
                             <h1 className="logo-title">Sitrak</h1>
                             <p className="logo-subtitle">
-                                <Plane size={12} />
                                 Sistim Tracking Karantina
                             </p>
                         </div>

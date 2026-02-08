@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="95" fill="#5D4037"/>
+  <circle cx="100" cy="100" r="85" fill="#D4AF37"/>
+  <circle cx="100" cy="100" r="75" fill="#1B5E20"/>
+  <text x="100" y="40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D4AF37" text-anchor="middle">BADAN KARANTINA</text>
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#D4AF37" text-anchor="middle">INDONESIA</text>
+  
+  <!-- Garuda Pancasila simplified -->
+  <path d="M100 60 L85 90 L70 85 L75 100 L60 105 L75 110 L70 125 L85 120 L100 150 L115 120 L130 125 L125 110 L140 105 L125 100 L130 85 L115 90 Z" fill="#D4AF37"/>
+  
+  <!-- Shield -->
+  <rect x="85" y="85" width="30" height="35" rx="3" fill="#C62828"/>
+  <rect x="85" y="85" width="15" height="17.5" fill="#000"/>
+  <rect x="100" y="85" width="15" height="17.5" fill="#FFF"/>
+  <rect x="85" y="102.5" width="15" height="17.5" fill="#FFF"/>
+  <rect x="100" y="102.5" width="15" height="17.5" fill="#1B5E20"/>
+  
+  <!-- Stars -->
+  <circle cx="30" cy="100" r="3" fill="#D4AF37"/>
+  <circle cx="170" cy="100" r="3" fill="#D4AF37"/>
+</svg>
