@@ -1,0 +1,295 @@
+/* Manifest Page Styles - Light Theme */
+
+.manifest {
+    padding: var(--spacing-4);
+}
+
+@media (min-width: 769px) {
+    .manifest {
+        padding: var(--spacing-8);
+    }
+}
+
+/* Page Header */
+.manifest .page-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-6);
+}
+
+@media (min-width: 640px) {
+    .manifest .page-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+/* Manifest List */
+.manifest-list {
+    display: grid;
+    gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+    .manifest-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .manifest-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Manifest Card */
+.manifest-card {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    transition: all var(--transition-base);
+}
+
+.manifest-card:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-2px);
+}
+
+.manifest-card .card-header {
+    padding: var(--spacing-4) var(--spacing-5);
+    background: var(--color-bg-tertiary);
+    border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.manifest-card .card-body {
+    padding: var(--spacing-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.manifest-card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-4) var(--spacing-5);
+    border-top: 1px solid var(--color-border-subtle);
+    background: var(--color-bg-tertiary);
+}
+
+/* Manifest Route */
+.manifest-route {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3);
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-lg);
+}
+
+.route-point {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.route-point svg {
+    color: var(--color-accent-primary);
+}
+
+.route-point.destination svg {
+    color: var(--color-success);
+}
+
+.route-arrow {
+    color: var(--color-text-muted);
+    margin: 0 var(--spacing-2);
+}
+
+/* Manifest Summary */
+.manifest-summary {
+    display: flex;
+    gap: var(--spacing-4);
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
+}
+
+.summary-item svg {
+    color: var(--color-accent-primary);
+}
+
+/* Manifest Parties */
+.manifest-parties {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    padding-top: var(--spacing-3);
+    border-top: 1px solid var(--color-border-subtle);
+}
+
+.party {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+}
+
+.party-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.party-name {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+/* Detail Modal Enhancements */
+.detail-badges {
+    display: flex;
+    gap: var(--spacing-2);
+    align-items: center;
+}
+
+.route-display {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-4);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.route-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    flex: 1;
+    padding: var(--spacing-3);
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-md);
+}
+
+.route-card svg {
+    color: var(--color-accent-primary);
+}
+
+.route-card.destination svg {
+    color: var(--color-success);
+}
+
+.route-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.route-type {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.route-card strong {
+    font-size: var(--font-size-base);
+    color: var(--color-text-primary);
+}
+
+.route-detail {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+}
+
+.route-connector {
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+}
+
+/* Items Table */
+.items-table {
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--spacing-4);
+    padding: var(--spacing-3) var(--spacing-4);
+    background: var(--color-bg-tertiary);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: var(--spacing-4);
+    padding: var(--spacing-3) var(--spacing-4);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    border-top: 1px solid var(--color-border-subtle);
+    align-items: center;
+}
+
+.table-row:first-of-type {
+    border-top: none;
+}
+
+/* Parties Grid */
+.parties-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-4);
+}
+
+@media (max-width: 480px) {
+    .parties-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.party-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-4);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.party-card svg {
+    color: var(--color-accent-primary);
+}
+
+.party-card div {
+    display: flex;
+    flex-direction: column;
+}
+
+.party-type {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.party-card strong {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+}

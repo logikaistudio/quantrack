@@ -1,0 +1,431 @@
+/* Dashboard Styles - 2026 Modern Analytics */
+
+.dashboard {
+    padding: var(--spacing-6);
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: var(--spacing-8);
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-5);
+    margin-bottom: var(--spacing-8);
+}
+
+.stat-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-6);
+    display: flex;
+    gap: var(--spacing-4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border-subtle);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.stat-card.primary .stat-icon {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.stat-card.warning .stat-icon {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.stat-card.info .stat-icon {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.stat-card.success .stat-icon {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: var(--color-text-tertiary);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--color-text-primary);
+    line-height: 1.2;
+    margin: 4px 0;
+}
+
+.stat-change {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+}
+
+.stat-change.positive {
+    color: #059669;
+    font-weight: 600;
+}
+
+/* Charts Grid */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-8);
+}
+
+.chart-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border-subtle);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-6);
+    padding-bottom: var(--spacing-4);
+    border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.chart-header h3 {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text-primary);
+}
+
+.chart-filter {
+    padding: 6px 12px;
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-md);
+    font-size: 13px;
+    background: white;
+}
+
+/* Bar Chart */
+.bar-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 240px;
+    padding: var(--spacing-4) 0;
+    gap: 8px;
+}
+
+.bar-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 80px;
+}
+
+.bar-container {
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+}
+
+.bar {
+    width: 16px;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.bar:hover {
+    opacity: 0.8;
+    transform: scaleY(1.05);
+}
+
+.bar-primary {
+    background: linear-gradient(to top, #3b82f6, #60a5fa);
+}
+
+.bar-success {
+    background: linear-gradient(to top, #10b981, #34d399);
+}
+
+.bar-label {
+    font-size: 11px;
+    color: var(--color-text-tertiary);
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-6);
+    margin-top: var(--spacing-4);
+    padding-top: var(--spacing-4);
+    border-top: 1px solid var(--color-border-subtle);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--color-text-secondary);
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+.legend-color.primary {
+    background: #3b82f6;
+}
+
+.legend-color.success {
+    background: #10b981;
+}
+
+/* Pie Chart */
+.pie-chart-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    padding: var(--spacing-4);
+}
+
+.pie-chart {
+    width: 200px;
+    height: 200px;
+}
+
+.pie-legend {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}
+
+.pie-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+}
+
+.pie-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+/* Map Section */
+.map-section {
+    margin-bottom: var(--spacing-8);
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-5);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.map-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border-subtle);
+}
+
+.map-legend {
+    display: flex;
+    gap: var(--spacing-6);
+    margin-top: var(--spacing-4);
+    padding: var(--spacing-3);
+    background: var(--color-bg-tertiary);
+    border-radius: var(--radius-md);
+}
+
+.map-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--color-text-secondary);
+}
+
+.map-marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.map-marker.success {
+    background: #10b981;
+}
+
+.map-marker.warning {
+    background: #f59e0b;
+}
+
+/* Leaflet popup customization */
+.leaflet-popup-content-wrapper {
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+    margin: 12px;
+}
+
+.activity-section {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border-subtle);
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-5);
+}
+
+.activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    background: var(--color-bg-tertiary);
+    transition: background 0.2s;
+}
+
+.activity-item:hover {
+    background: var(--color-bg-secondary);
+}
+
+.activity-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.activity-item.pengajuan .activity-icon {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.activity-item.approval .activity-icon {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.activity-item.pengiriman .activity-icon {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.activity-item.penerimaan .activity-icon {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.activity-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.activity-content strong {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.activity-content span {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+}
+
+.activity-time {
+    font-size: 12px;
+    color: var(--color-text-tertiary);
+    white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard {
+        padding: var(--spacing-4);
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pie-chart-container {
+        flex-direction: column;
+    }
+}
