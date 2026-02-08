@@ -4,8 +4,8 @@ import './Pengaturan.css'
 
 function Pengaturan() {
     const [settings, setSettings] = useState({
-        appName: 'Quarants',
-        appSubtitle: 'Karantina Internasional',
+        appName: 'Sitrak',
+        appSubtitle: 'Sistim Tracking Karantina',
         organizationName: 'Badan Karantina Indonesia',
         address: 'Jl. Harsono RM No.3, Ragunan, Jakarta Selatan 12550',
         phone: '+62 21 7815380',
